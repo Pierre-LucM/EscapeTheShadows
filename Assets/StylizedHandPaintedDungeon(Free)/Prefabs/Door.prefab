@@ -146,7 +146,7 @@ HingeJoint:
   m_GameObject: {fileID: 416386656469751746}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0.703, y: 0, z: 0}
+  m_Anchor: {x: 0.71, y: 1, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
@@ -160,7 +160,7 @@ HingeJoint:
   m_Motor:
     targetVelocity: 0
     force: 0
-    freeSpin: 0
+    freeSpin: 1
   m_UseLimits: 1
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
@@ -193,10 +193,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Size: {x: 0.2804371, y: 0.24598837, z: 0.29553434}
-  m_Center: {x: -0.47716925, y: 0.95975626, z: 0.028115736}
+  m_Size: {x: 0.2804371, y: 0.29771024, z: 0.29553428}
+  m_Center: {x: -0.47716925, y: 0.9856172, z: 0.028115736}
 --- !u!114 &2963752015448700626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 5826582559400492653}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
