@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
+  m_FogColor: {r: 0, g: 0, b: 0, a: 0.6862745}
   m_FogMode: 3
   m_FogDensity: 0.3
   m_LinearFogStart: 0
@@ -10101,6 +10101,14 @@ PrefabInstance:
     - target: {fileID: 6388624975518912130, guid: 564ee70803d2e594b97da8ae2b1d1aa8, type: 3}
       propertyPath: m_ThrowOnDetach
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848206814493803830, guid: 564ee70803d2e594b97da8ae2b1d1aa8, type: 3}
+      propertyPath: _lightAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848206814493803830, guid: 564ee70803d2e594b97da8ae2b1d1aa8, type: 3}
+      propertyPath: _lightAction.m_Action.m_Name
+      value: Light
       objectReference: {fileID: 0}
     - target: {fileID: 7986399562958766494, guid: 564ee70803d2e594b97da8ae2b1d1aa8, type: 3}
       propertyPath: m_UseGravity
