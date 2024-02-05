@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlashLight : MonoBehaviour
 {
-    private Light _light;
+    [SerializeField] private Light _light;
     private AudioSource _audioSource;
     void Start()
     {
