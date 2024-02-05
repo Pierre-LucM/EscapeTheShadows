@@ -5,16 +5,16 @@ using UnityEngine;
 public class doorsound : MonoBehaviour
 {
     public AudioSource CreakingDoor;
-    public float rotationThreshold = 10f;
+    public float rotationThreshold = 0.01f;
     private float lastRotation;
     
     void Update()
-    {
-        float currentRotation = transform.localRotation.y;
-        if (Mathf.Abs(currentRotation - lastRotation) > rotationThreshold)
-        {
-            CreakingDoor.Play();
-        } 
-        lastRotation = currentRotation;
+    {       
+        Debug.Log(Mathf.Abs(transform.rotation.eulerAngles.y - lastRotation));
+          if (Mathf.Abs(transform.rotation.eulerAngles.y - lastRotation) > rotationThreshold)
+          {
+                CreakingDoor.Play();
+          }
+          lastRotation = transform.rotation.eulerAngles.y;
     }
 }
