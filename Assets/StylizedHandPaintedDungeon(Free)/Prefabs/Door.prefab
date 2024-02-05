@@ -387,7 +387,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 51baf4cfca9569c419b64d34e5a16ccc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.655
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -484,4 +484,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CreakingDoor: {fileID: 1098197240971745837}
-  rotationThreshold: 10
+  CreakingDoorSound: {fileID: 8300000, guid: 51baf4cfca9569c419b64d34e5a16ccc, type: 3}
+  rotationThreshold: 0.1
