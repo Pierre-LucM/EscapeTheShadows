@@ -9973,6 +9973,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1230493832}
     m_Modifications:
+    - target: {fileID: 5168256435888330961, guid: eda0ad54c11a95644bcfb3933bcd0038, type: 3}
+      propertyPath: MinDistance
+      value: 0.59571075
+      objectReference: {fileID: 0}
     - target: {fileID: 5755640695323030592, guid: eda0ad54c11a95644bcfb3933bcd0038, type: 3}
       propertyPath: m_Name
       value: Door_Entrance
@@ -14789,7 +14793,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1594293339782785920, guid: eda0ad54c11a95644bcfb3933bcd0038, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5168256435888330961, guid: eda0ad54c11a95644bcfb3933bcd0038, type: 3}
       propertyPath: MinDistance
@@ -20755,6 +20759,14 @@ PrefabInstance:
     - target: {fileID: 6388624975518912130, guid: 564ee70803d2e594b97da8ae2b1d1aa8, type: 3}
       propertyPath: m_ThrowOnDetach
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388624975518912130, guid: 564ee70803d2e594b97da8ae2b1d1aa8, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DropLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388624975518912130, guid: 564ee70803d2e594b97da8ae2b1d1aa8, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickupLight
       objectReference: {fileID: 0}
     - target: {fileID: 6848206814493803830, guid: 564ee70803d2e594b97da8ae2b1d1aa8, type: 3}
       propertyPath: _lightAction.m_Reference
