@@ -941,6 +941,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _light: {fileID: 5279401591801204393}
+  _lightAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Light
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 2ee1ae6b-36c7-4f32-a767-ea85131d29c2
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  _isOn: 0
+  light: {fileID: 5279401591801204393}
+  minTime: 0
+  maxTime: 0
+  Timer: 0
 --- !u!82 &1774096995935973793
 AudioSource:
   m_ObjectHideFlags: 0
