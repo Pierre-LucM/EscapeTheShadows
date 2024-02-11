@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+//using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameStartMenu : MonoBehaviour
 {
-    [Header("UI Pages")]
-    public GameObject mainMenu;
+    [Header("UI Pages")] public GameObject mainMenu;
     public GameObject options;
     public GameObject about;
 
-    [Header("Main Menu Buttons")]
-    public Button startButton;
+    [Header("Main Menu Buttons")] public Button startButton;
+
     public Button optionButton;
-    public Button aboutButton;
+
+    // public Button aboutButton;
     public Button quitButton;
 
     public List<Button> returnButtons;
@@ -26,7 +28,7 @@ public class GameStartMenu : MonoBehaviour
         //Hook events
         startButton.onClick.AddListener(StartGame);
         optionButton.onClick.AddListener(EnableOption);
-        aboutButton.onClick.AddListener(EnableAbout);
+        //aboutButton.onClick.AddListener(EnableAbout);
         quitButton.onClick.AddListener(QuitGame);
 
         foreach (var item in returnButtons)
@@ -43,7 +45,9 @@ public class GameStartMenu : MonoBehaviour
     public void StartGame()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(1);
+        SceneManager.LoadSceneAsync(1);
+        // SceneTransitionManager.singleton.GoToSceneAsync(1);
+
     }
 
     public void HideAll()
@@ -59,16 +63,11 @@ public class GameStartMenu : MonoBehaviour
         options.SetActive(false);
         about.SetActive(false);
     }
+
     public void EnableOption()
     {
         mainMenu.SetActive(false);
         options.SetActive(true);
         about.SetActive(false);
-    }
-    public void EnableAbout()
-    {
-        mainMenu.SetActive(false);
-        options.SetActive(false);
-        about.SetActive(true);
     }
 }

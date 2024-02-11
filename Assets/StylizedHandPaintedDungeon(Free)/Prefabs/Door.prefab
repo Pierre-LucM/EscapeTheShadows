@@ -374,7 +374,7 @@ MonoBehaviour:
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
-  m_AddDefaultGrabTransformers: 0
+  m_AddDefaultGrabTransformers: 1
 --- !u!82 &1098197240971745837
 AudioSource:
   m_ObjectHideFlags: 0

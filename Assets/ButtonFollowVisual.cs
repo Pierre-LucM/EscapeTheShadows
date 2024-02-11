@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class ButtonFollowVisual : MonoBehaviour
@@ -84,5 +85,10 @@ public class ButtonFollowVisual : MonoBehaviour
         {
             visualTarget.localPosition = Vector3.Lerp(visualTarget.localPosition, initLocalPos, Time.deltaTime * resetSpeed);
         }
+    }
+    public void OnButtonSelected()
+    {
+        Debug.Log("Button Selected");
+        SceneManager.LoadSceneAsync(1);
     }
 }

@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start_Scene.unity
+    guid: 6fb7658111ffe7f41b3b85c98ecac3f6
+  - enabled: 1
+    path: Assets/LeoRoom/LeoRoom.unity
+    guid: f6af1acf758930740b6b467aa4795e22
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9379301abb4fa9748980d30cd826f1fc, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5f6e3b0e198dcb7499fbb199ebbe0a86, type: 2}
