@@ -10,6 +10,20 @@ public class ScreamerScript : MonoBehaviour
     [SerializeField] private float SpawnDuration = 5f;
     private float timer;
     private bool isSpawned = false;
+    public AudioClip scream;
+    private AudioSource audioSource;
+    
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        
+        audioSource.clip = scream;
+    }
     void Update()
     {
         if (isSpawned)
@@ -30,6 +44,7 @@ public class ScreamerScript : MonoBehaviour
             SpawnScreamer();
             timer = SpawnDuration;
             isSpawned = true;
+            audioSource.PlayOneShot(scream);
         }
     }
     
