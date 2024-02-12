@@ -3042,7 +3042,7 @@ GameObject:
   m_Layer: 0
   m_Name: ScreamerSpawn
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3055,7 +3055,7 @@ Transform:
   m_GameObject: {fileID: 188604224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.867, y: -0.9, z: -11.2}
+  m_LocalPosition: {x: 61.867, y: -1.415, z: -11.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5201,8 +5201,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.1337003, y: 1, z: 0.69389176}
+  m_Center: {x: 0.06685002, y: 0, z: -0.15305416}
 --- !u!4 &329632608
 Transform:
   m_ObjectHideFlags: 0
@@ -39047,3 +39047,5 @@ SceneRoots:
   - {fileID: 1791858335}
   - {fileID: 329632608}
   - {fileID: 188604225}
+  - {fileID: 2057614137}
+  - {fileID: 667446296}
