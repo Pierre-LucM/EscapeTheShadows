@@ -9,21 +9,21 @@ public class ScreamerScript : MonoBehaviour
     [SerializeField] private GameObject screamer;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private float SpawnDuration = 5f;
-    private float timer;
-    private bool isSpawned = false;
+    private float _timer;
+    private bool _isSpawned = false;
     public AudioClip scream;
-    private AudioSource audioSource;
+    private AudioSource _audioSource;
     
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponent<AudioSource>();
 
-        if (audioSource == null)
+        if (_audioSource == null)
         {
-            audioSource = gameObject.AddComponent<AudioSource>();
+            _audioSource = gameObject.AddComponent<AudioSource>();
         }
         
-        audioSource.clip = scream;
+        _audioSource.clip = scream;
     }
     void Update()
     {
