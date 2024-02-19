@@ -955,8 +955,8 @@ MonoBehaviour:
     m_Reference: {fileID: 0}
   _isOn: 0
   light: {fileID: 5279401591801204393}
-  minTime: 0
-  maxTime: 0
+  minTime: 1
+  maxTime: 50
   Timer: 0
 --- !u!82 &1774096995935973793
 AudioSource:
