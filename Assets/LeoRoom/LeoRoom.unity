@@ -5864,7 +5864,7 @@ MonoBehaviour:
   screamer: {fileID: 1309486516299566, guid: 227ee07e9e5b7914ba8fbb8f430be9a5, type: 3}
   spawnPoint: {fileID: 188604225}
   SpawnDuration: 2
-  scream: {fileID: 0}
+  scream: {fileID: 8300000, guid: 07d0a11b5c090874e8c7b25e2697a5c1, type: 3}
 --- !u!65 &329632607
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -16,14 +16,7 @@ public class ScreamerScript : MonoBehaviour
     
     private void Start()
     {
-        _audioSource = GetComponent<AudioSource>();
-
-        if (_audioSource == null)
-        {
-            _audioSource = gameObject.AddComponent<AudioSource>();
-        }
-        
-        _audioSource.clip = scream;
+      
     }
     void Update()
     {
@@ -34,7 +27,18 @@ public class ScreamerScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if(!_isSpawned) SpawnScreamer();
+            if (!_isSpawned)
+            {
+                _audioSource = GetComponent<AudioSource>();
+
+                if (_audioSource == null)
+                {
+                    _audioSource = gameObject.AddComponent<AudioSource>();
+                }
+        
+                _audioSource.clip = scream;
+                SpawnScreamer();
+            }
         }
     }
 
@@ -45,6 +49,7 @@ public class ScreamerScript : MonoBehaviour
             yield return new WaitForSeconds(_timer);
             
             Destroy(gameObjectToDestroy.transform.gameObject);
+            _audioSource.Stop();
             _isSpawned = false;
         }
         else
@@ -56,10 +61,11 @@ public class ScreamerScript : MonoBehaviour
     private void SpawnScreamer()
     {
         if (screamer != null)
-        {
+        {   _audioSource.Play();
             GameObject screamerPrefab = Instantiate(screamer, spawnPoint.position, spawnPoint.rotation);
             screamerPrefab.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             _isSpawned = true;
+      
             _timer = SpawnDuration;
             StartCoroutine(DestroyScreamer(screamerPrefab));
         }
