@@ -49249,6 +49249,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7716168641194994469, guid: 178c6ca75cf20c7468569d10d917fbad, type: 3}
   m_PrefabInstance: {fileID: 1600403153}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &1601209178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49315,6 +49316,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8927911178912368479, guid: 7929b060f321dae489b7f13501f38f7f, type: 3}
   m_PrefabInstance: {fileID: 1601209178}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 0076ac7 (Mob Random Mouvement in Dinning Room)
 --- !u!1 &1602962947
 GameObject:
   m_ObjectHideFlags: 0
@@ -55895,6 +55898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a84493687a2e3240a0ae3e99dbd9cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   playerTransform:
   - {fileID: 1602962948}
   - {fileID: 978703926}
@@ -55905,6 +55909,9 @@ MonoBehaviour:
   - {fileID: 767501641}
   _player: {fileID: 532923690}
   _audioSource: {fileID: 1841274985}
+=======
+  playerTransform: {fileID: 1602962948}
+>>>>>>> parent of 0076ac7 (Mob Random Mouvement in Dinning Room)
 --- !u!195 &1841274982
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -55914,10 +55921,17 @@ NavMeshAgent:
   m_GameObject: {fileID: 1841274979}
   m_Enabled: 1
   m_AgentTypeID: 0
+<<<<<<< HEAD
   m_Radius: 2
   m_Speed: 3.5
   m_Acceleration: 1
   avoidancePriority: 15
+=======
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+>>>>>>> parent of 0076ac7 (Mob Random Mouvement in Dinning Room)
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -55948,6 +55962,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<< HEAD
 --- !u!82 &1841274985
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56129,6 +56144,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038, type: 3}
   m_PrefabInstance: {fileID: 1842612740}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 0076ac7 (Mob Random Mouvement in Dinning Room)
 --- !u!1001 &1848472276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67690,12 +67707,15 @@ SceneRoots:
   - {fileID: 876836070}
   - {fileID: 1983543359}
   - {fileID: 1602962948}
+<<<<<<< HEAD
   - {fileID: 978703926}
   - {fileID: 1169011375}
   - {fileID: 300699839}
   - {fileID: 1663515929}
   - {fileID: 832160710}
   - {fileID: 767501641}
+=======
+>>>>>>> parent of 0076ac7 (Mob Random Mouvement in Dinning Room)
   - {fileID: 1321978083}
   - {fileID: 1974815858}
   - {fileID: 1727675663}
