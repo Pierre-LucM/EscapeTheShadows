@@ -11,8 +11,6 @@ public class FlashLight : MonoBehaviour
     private InputActionProperty _lightAction;
     [SerializeField]
     private bool _isOn; 
-    
-    public Light light;
     public float minTime;
     public float maxTime;
     public float Timer;
@@ -73,8 +71,20 @@ public class FlashLight : MonoBehaviour
 
         if (Timer<= 0)
         {
-            light.enabled = !light.enabled;
-            Timer = Random.Range(minTime, maxTime);
+         //   light.enabled = !light.enabled;
+            StartCoroutine(ToggleLight(Random.Range(4, 7)));
         }
+    }
+    
+    IEnumerator ToggleLight(int toggleNumber)
+    {
+        for (int i = 0; i < toggleNumber; i++)
+        {
+            yield return new WaitForSeconds(Random.Range(0.25f, 1.5f));
+            _light.enabled = !_light.enabled;
+        }
+        Timer = Random.Range(minTime, maxTime);
+        _light.enabled = true;
+        yield return null;
     }
 }
