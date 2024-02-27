@@ -8,23 +8,15 @@ using Random = UnityEngine.Random; //important
 //if you use this code you are contractually obligated to like the YT video
 public class RandomMovement : MonoBehaviour //don't forget to change the script name if you haven't
 {
-<<<<<<< HEAD
     public List<Transform> playerTransform;
     NavMeshAgent agent;
     Animator animator;
     [SerializeField] private Transform _player;
     [SerializeField] private AudioSource _audioSource;
-=======
-    public Transform playerTransform;
-    NavMeshAgent agent;
-    Animator animator;
->>>>>>> parent of 0076ac7 (Mob Random Mouvement in Dinning Room)
-
-    void Start()
+void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-<<<<<<< HEAD
         agent.destination = playerTransform[Random.Range(0, playerTransform.Count)].position;
     }
 
@@ -78,17 +70,6 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
             agent.destination = playerTransform[Random.Range(0, playerTransform.Count)].position;
         }
     }*/
-}
-=======
-    }
-
-    
-    void Update()
-    {
-        agent.destination = playerTransform.position;
-        animator.SetFloat("Speed", agent.velocity.magnitude);
-    }
-
     
 }
->>>>>>> parent of 0076ac7 (Mob Random Mouvement in Dinning Room)
+
