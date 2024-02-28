@@ -23,5 +23,17 @@ public class StoreKey : MonoBehaviour
         keyCount++;
         keyCounter.text = keyCount.ToString();
     }
+    public void RemoveKey()
+    {
+        keyCount--;
+        keyCounter.text = keyCount.ToString();
+    }
+    public void UseKey()
+    {
+        if (keyCount > 0)
+        {
+            RemoveKey();
+        }
+    }
     
 }

@@ -14,6 +14,7 @@ public class FlashLight : MonoBehaviour
     public float minTime;
     public float maxTime;
     public float Timer;
+    private bool _isGrabbed;
     void Start()
     {
         Timer = Random.Range(minTime, maxTime);
@@ -43,7 +44,7 @@ public class FlashLight : MonoBehaviour
     }
     void Update()
     {
-        if (_lightAction.action.triggered)
+        if (_lightAction.action.triggered && _isGrabbed)
         {
             _isOn = !_isOn;
             if (_isOn)
@@ -72,7 +73,7 @@ public class FlashLight : MonoBehaviour
         if (Timer<= 0)
         {
          //   light.enabled = !light.enabled;
-            StartCoroutine(ToggleLight(Random.Range(4, 7)));
+            StartCoroutine(ToggleLight(Random.Range(2,6)));
         }
     }
     
@@ -80,11 +81,19 @@ public class FlashLight : MonoBehaviour
     {
         for (int i = 0; i < toggleNumber; i++)
         {
-            yield return new WaitForSeconds(Random.Range(0.25f, 1.5f));
+            yield return new WaitForSeconds(Random.Range(0.3f, 1.5f));
             _light.enabled = !_light.enabled;
         }
         Timer = Random.Range(minTime, maxTime);
         _light.enabled = true;
         yield return null;
+    }
+    public void GrabLight()
+    {
+        _isGrabbed = true;
+    }
+    public void ReleaseLight()
+    {
+        _isGrabbed = false;
     }
 }

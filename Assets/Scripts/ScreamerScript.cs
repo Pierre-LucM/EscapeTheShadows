@@ -12,7 +12,7 @@ public class ScreamerScript : MonoBehaviour
     private float _timer;
     private bool _isSpawned = false;
     public AudioClip scream;
-    private AudioSource _audioSource;
+    public AudioSource _audioSource;
     
     private void Start()
     {

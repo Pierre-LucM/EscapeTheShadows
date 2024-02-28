@@ -252,6 +252,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4672004465097902993}
         m_TargetAssemblyTypeName: doorsound, Assembly-CSharp
+        m_MethodName: ToggleGrab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4672004465097902993}
+        m_TargetAssemblyTypeName: doorsound, Assembly-CSharp
         m_MethodName: playSoundOnDoor
         m_Mode: 1
         m_Arguments:
@@ -265,6 +277,18 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 4672004465097902993}
+        m_TargetAssemblyTypeName: doorsound, Assembly-CSharp
+        m_MethodName: ToggleUngrab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 4672004465097902993}
         m_TargetAssemblyTypeName: doorsound, Assembly-CSharp
         m_MethodName: stopSoundOnDoor
@@ -487,3 +511,6 @@ MonoBehaviour:
   CreakingDoorSound: {fileID: 8300000, guid: 51baf4cfca9569c419b64d34e5a16ccc, type: 3}
   rotationThreshold: 0.1
   isGrab: 0
+  isLocked: 1
+  doorLocked: {fileID: 0}
+  player: {fileID: 0}
